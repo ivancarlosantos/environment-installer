@@ -2,18 +2,16 @@
 
 echo "Environment Installer"
 
-sleep 3
-
-curl https://github.com/ivancarlosantos/environment-installer/blob/master/environment.c
+gcc ola.c -o ola
 
 sleep 3
 
-curl https://github.com/ivancarlosantos/environment-installer/blob/master/environment.sh 
+./ola
 
 sleep 3
 
-chmod +x environment.sh
+gcc environment.c -o environment
 
 sleep 3
 
-sh environment.sh
+./environment
