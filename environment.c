@@ -64,6 +64,7 @@ sleep(3);
 system("apt-get install nodejs npm");
 
 printf("\tInstall nvm\n");
+system("cd");
 sleep(3);
 system("curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v.0.39.1/install.sh | bash");
 sleep(3);
