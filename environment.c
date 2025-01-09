@@ -100,6 +100,7 @@ system("apt-get install nginx");
 
 printf("\tInstall Docker\n");
 sleep(3);
+
 printf("update and upgrade droplet\n");
 sleep(3);
 system("apt-get update -y && apt-get upgrade -y");
@@ -109,14 +110,17 @@ printf("install certificates\n");
 sleep(3);
 system("apt-get install ca-certificates curl");
 sleep(3);
+
 printf("install docker\n");
 sleep(3);
 system("curl -ssL https://get.docker.com | sh");
 sleep(3);
+
 printf("add group docker\n");
 sleep(3);
 system("groupadd docker");
 sleep(3);
+
 printf("add user to group docker\n");
 sleep(3);
 system("usermod -aG docker $USER");
