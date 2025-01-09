@@ -22,25 +22,9 @@ printf("gcc instalado com sucesso\n\n");
 
 sleep(5);
 
-printf("\tSSH Generate Keygen\n");
+printf("\tShow-ME SSH Generate Keygen\n");
 sleep(3);
-
-printf("Generate SSH Key\n");
-sleep(3);
-system("ssh-keygen -t ed25519 -C 'joao@ibglbrasil.com.br' ");
-sleep(3);
-
-printf("Evaluate Key\n");
-sleep(3);
-system("eval "$(ssh-agent -s)" ");
-sleep(3);
-
-printf("Add Key\n");
-sleep(3);
-system("ssh-add .ssh/id_25519");
-sleep(3);
-
-printf("Copy SSH Key\n");
+printf("SSH Key\n");
 sleep(3);
 system("cat .ssh/ed_25519.pub");
 sleep(3);
