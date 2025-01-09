@@ -22,20 +22,6 @@ printf("gcc instalado com sucesso\n\n");
 
 sleep(5);
 
-printf("\tShow-ME SSH Generate Keygen\n");
-sleep(3);
-printf("SSH Key\n");
-sleep(3);
-system("cat .ssh/ed_25519.pub");
-sleep(3);
-system("cd");
-sleep(2);
-system("cat .ssh/id_ed25519.pub >> environment-installer/ssh_pub.txt");
-sleep(2);
-printf("keygen file ssh_pub.txt\n");
-
-sleep(5);
-
 printf("\tJava Installer\n\n");
 sleep(3);
 system("add-apt-repository ppa:linuxuprising/java -y");
@@ -62,13 +48,6 @@ sleep(5);
 printf("\tNode Install\n");
 sleep(3);
 system("apt-get install nodejs npm");
-
-printf("\tInstall nvm\n");
-system("cd");
-sleep(3);
-system("curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v.0.39.1/install.sh | bash");
-sleep(3);
-system("source .bashrc");
 
 printf("\tInstall Node v20.18.1\n");
 sleep(3);
@@ -102,7 +81,7 @@ sleep(3);
 printf("nvm\n");
 sleep(3);
 
-system("nvm -v");
+system("nvm --version");
 sleep(3);
 
 printf("pnpm\n");
@@ -118,6 +97,31 @@ system("pm2 --version");
 printf("\tInstall Nginx\n");
 sleep(3);
 system("apt-get install nginx");
+
+printf("\tInstall Docker\n");
+sleep(3);
+printf("update and upgrade droplet\n");
+sleep(3);
+system("apt-get update -y && apt-get upgrade -y");
+sleep(3);
+
+printf("install certificates\n");
+sleep(3);
+system("apt-get install ca-certificates curl");
+sleep(3);
+printf("install docker\n");
+sleep(3);
+system("curl -ssL https://get.docker.com | sh");
+sleep(3);
+printf("add group docker\n");
+sleep(3);
+system("groupadd docker");
+sleep(3);
+printf("add user to group docker\n");
+sleep(3);
+system("usermod -aG docker $USER");
+
+printf("\tDocker installed successfully\n");
 
     return 0;
 }
