@@ -12,6 +12,16 @@ printf("droplet atualizado com sucesso\n\n");
 
 sleep(5);
 
+printf("\tInstalando gcc\n\n");
+sleep(3);
+system("apt-get install gcc");
+sleep(3);
+system("gcc --version");
+sleep(3);
+printf("gcc instalado com sucesso\n\n");
+
+sleep(5);
+
 printf("\tSSH Generate Keygen\n");
 sleep(3);
 
@@ -59,7 +69,5 @@ system("apt-get install maven");
 
 sleep(5);
 
-
-printf("\n\n");
 return 0;
 }
