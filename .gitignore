@@ -3,5 +3,4 @@ deploy.sh
 docker.c
 node.c 
 ssh-generate.c 
-tomcat-server.sh 
-update_upgrade.c
+tomcat-server.sh
