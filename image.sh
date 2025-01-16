@@ -1,6 +1,5 @@
 #!/bin/bash
-
-echo "Update/Refresh backend container"
+sleep 2
 
 gcc image.c -o image
 
