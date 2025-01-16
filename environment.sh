@@ -15,3 +15,7 @@ gcc environment.c -o environment
 sleep 3
 
 ./environment
+
+sleep 5
+
+curl ascii.live/rick
