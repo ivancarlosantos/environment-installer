@@ -1,4 +1,5 @@
 #!/bin/bash
+
 sleep 2
 
 gcc image.c -o image
