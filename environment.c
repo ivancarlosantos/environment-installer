@@ -50,6 +50,11 @@ sleep(3);
 system("npm install -g pnpm");
 sleep(3);
 
+printf("\tInstall pnpm Version\n");
+sleep(3);
+system("npm install -g npm@11.0.0");
+sleep(3);
+
 printf("\tInstall pm2\n");
 sleep(3);
 system("npm install -g pm2");
