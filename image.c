@@ -34,7 +34,7 @@ sleep(5);
 
 printf("Executando Docker Backend\n");
 sleep(3);
-system(" ");
+system(" - ");
 sleep(5);
 
 printf("Processo Realizado com Sucesso !!!");
