@@ -45,20 +45,6 @@ printf("maven install successfully\n");
 
 sleep(5);
 
-printf("\tNode Install\n");
-sleep(3);
-system("apt-get install nodejs npm");
-
-printf("\tInstall Node v20.18.1\n");
-sleep(3);
-system("nvm install v20.18.1");
-sleep(3);
-
-printf("\tUse Node Version\n");
-sleep(3);
-system("nvm use v20.18.1");
-sleep(3);
-
 printf("\tInstall pnpm\n");
 sleep(3);
 system("npm install -g pnpm");
@@ -76,9 +62,6 @@ printf("node\n");
 sleep(3);
 
 system("node -v");
-sleep(3);
-
-printf("nvm\n");
 sleep(3);
 
 system("nvm --version");
