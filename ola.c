@@ -4,7 +4,7 @@
 
 int main(){
 
-printf("--> Ola Droplet <--\n");
+printf("\tOla Droplet\n");
 sleep(4);
 system("cat /etc/os-release");
 sleep(3);
