@@ -14,26 +14,18 @@ curl -fsSL https://raw.githubusercontent.com/ivancarlosantos/environment-install
 
 sleep 5
 
-echo "Download Java Installer"
-curl -o- https://raw.githubusercontent.com/ivancarlosantos/environment-installer/refs/heads/master/java.c
-sleep 3
-gcc java.c -o java
-sleep 3
-./java
-sleep 3
-
 echo "gcc Installer"
 curl -fsSL https://raw.githubusercontent.com/ivancarlosantos/environment-installer/refs/heads/master/gcc.sh | bash
 sleep 3
 
-echo "Install Maven"
+echo "Maven Install"
 sleep 3
 apt-get install maven -y
 sleep 3
 echo "maven install successfully"
 sleep 3
 
-echo "Install nvm"
+echo "nvm Install"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 sleep 3
 source .bashrc
@@ -44,7 +36,7 @@ sleep 2
 nvm use v20.18.1 
 sleep 3
 
-echo "Install pnpm"
+echo "pnpm Install"
 sleep 3
 npm install -g pnpm
 sleep 3
@@ -54,13 +46,13 @@ sleep 3
 npm install -g npm@11.0.0
 sleep 3
 
-echo "Install pm2"
+echo "pm2 Install"
 sleep 3
 npm install -g pm2
 
 sleep 5
 
-echo "Install Nginx"
+echo "nginx Install"
 sleep 3
 apt-get install nginx -y
 sleep 3
@@ -73,7 +65,7 @@ sleep 3
 apt-get install ca-certificates curl
 sleep 3
 
-echo "Install Docker"
+echo "Docker Install"
 sleep 3
 curl -ssL https://get.docker.com | sh
 sleep 3
