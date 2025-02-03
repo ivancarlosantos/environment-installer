@@ -17,5 +17,6 @@ printf("\tBind Java Installer version v17\n\n");
 sleep(3);
 system("apt-get install oracle-java17-installer oracle-java17-set-default");
 
-    return 0;
+return 0;
+
 }
