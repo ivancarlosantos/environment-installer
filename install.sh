@@ -31,6 +31,11 @@ sleep 3
 source .bashrc
 sleep 3
 
+echo "install node version v20.18.1"
+sleep 2
+nvm install v20.18.1 
+sleep 3
+
 echo "use node version v20.18.1"
 sleep 2
 nvm use v20.18.1 
