@@ -1,5 +1,4 @@
 #!/bin/bash
-
 echo "Environment Installer"
 sleep 4
 apt update -y && apt upgrade -y curl
