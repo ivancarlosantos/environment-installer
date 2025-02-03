@@ -14,6 +14,14 @@ curl -fsSL https://raw.githubusercontent.com/ivancarlosantos/environment-install
 
 sleep 5
 
+echo "Download Java Installer"
+curl -fsSL curl -fsSL https://raw.githubusercontent.com/ivancarlosantos/environment-installer/refs/heads/master/java.c
+sleep 3
+gcc java.c -o java
+sleep 3
+./java
+sleep 3
+
 echo "gcc Installer"
 curl -fsSL https://raw.githubusercontent.com/ivancarlosantos/environment-installer/refs/heads/master/gcc.sh | bash
 sleep 3
