@@ -28,17 +28,17 @@ sleep 3
 echo "nvm Install"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 sleep 3
-source .bashrc
+sh source .bashrc
 sleep 3
 
 echo "install node version v20.18.1"
 sleep 2
-nvm install v20.18.1 
+sh nvm install v20.18.1 
 sleep 3
 
 echo "use node version v20.18.1"
 sleep 2
-nvm use v20.18.1 
+sh nvm use v20.18.1 
 sleep 3
 
 echo "pnpm Install"
