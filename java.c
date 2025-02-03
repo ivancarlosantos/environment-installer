@@ -19,11 +19,3 @@ system("apt-get install oracle-java17-installer oracle-java17-set-default");
 
     return 0;
 }
-
-
-
-add-apt-repository ppa:linuxuprising/java -y
-
-apt update -y
-
-apt-get install oracle-java17-installer oracle-java17-set-default
