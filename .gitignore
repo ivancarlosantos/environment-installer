@@ -1,11 +1,2 @@
 commands.sh
 deploy.sh
-docker.c
-node.c 
-ssh-generate.c 
-tomcat-server.sh
-update.c
-update.sh
-ola.c
-image.c
-image.sh
