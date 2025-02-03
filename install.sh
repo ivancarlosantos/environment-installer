@@ -9,12 +9,12 @@ echo "Update Successfully"
 sleep 5
 
 echo "OS Release"
-curl -fsSL https://raw.githubusercontent.com/PowerKR-IBGL/Scripts/refs/heads/master/release.sh?token=GHSAT0AAAAAAC5CMWZXXRUM3H5OMNN55NAIZ5BC7GQ | bash
+curl -fsSL https://raw.githubusercontent.com/ivancarlosantos/environment-installer/refs/heads/master/release.sh | bash
 
 sleep 5
 
 echo "gcc Installer"
-curl -fsSL https://raw.githubusercontent.com/PowerKR-IBGL/Scripts/refs/heads/master/gcc.sh?token=GHSAT0AAAAAAC5CMWZXFZ56GKIGW2PGXZFIZ5BC6PQ | bash
+curl -fsSL https://raw.githubusercontent.com/ivancarlosantos/environment-installer/refs/heads/master/gcc.sh | bash
 sleep 3
 
 echo "Java Installer"
