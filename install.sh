@@ -25,6 +25,16 @@ sleep 3
 echo "maven install successfully"
 sleep 3
 
+echo "Node Install"
+sleep 3
+apt-get install nodejs
+sleep 3
+
+echo "npm Install"
+sleep 3
+apt-get install npm
+sleep 3
+
 echo "nvm Install"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 sleep 3
