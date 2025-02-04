@@ -27,12 +27,12 @@ sleep 3
 
 echo "Node Install"
 sleep 3
-apt-get install nodejs
+apt-get install nodejs -y
 sleep 3
 
 echo "npm Install"
 sleep 3
-apt-get install npm
+apt-get install npm -y
 sleep 3
 
 echo "nvm Install"
