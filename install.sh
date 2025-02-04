@@ -18,54 +18,28 @@ echo "gcc Installer"
 curl -fsSL https://raw.githubusercontent.com/ivancarlosantos/environment-installer/refs/heads/master/gcc.sh | bash
 sleep 3
 
+echo "Java Installer"
+sleep 3
+wget -q https://raw.githubusercontent.com/ivancarlosantos/environment-installer/refs/heads/master/java.c
+sleep 3
+gcc java.c -o java
+sleep 3
+./java
+
+echo "Node Installer"
+sleep 3
+wget -q https://raw.githubusercontent.com/ivancarlosantos/environment-installer/refs/heads/master/node.c
+sleep 3
+gcc node.c -o node
+sleep 3
+./node
+
 echo "Maven Install"
 sleep 3
 apt-get install maven -y
 sleep 3
 echo "maven install successfully"
 sleep 3
-
-echo "Node Install"
-sleep 3
-apt-get install nodejs -y
-sleep 3
-
-echo "npm Install"
-sleep 3
-apt-get install npm -y
-sleep 3
-
-echo "nvm Install"
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
-sleep 3
-sh source .bashrc
-sleep 3
-
-echo "install node version v20.18.1"
-sleep 2
-sh nvm install v20.18.1 
-sleep 3
-
-echo "use node version v20.18.1"
-sleep 2
-sh nvm use v20.18.1 
-sleep 3
-
-echo "pnpm Install"
-sleep 3
-npm install -g pnpm
-sleep 3
-
-echo "Install pnpm Version"
-sleep 3
-npm install -g npm@11.0.0
-sleep 3
-
-echo "pm2 Install"
-sleep 3
-npm install -g pm2
-
-sleep 5
 
 echo "nginx Install"
 sleep 3
