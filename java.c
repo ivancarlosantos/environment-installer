@@ -16,6 +16,13 @@ sleep(3);
 printf("\tBind Java Installer version v17\n\n");
 sleep(3);
 system("apt-get install oracle-java17-installer oracle-java17-set-default");
+sleep(3);
 
+printf("\tMaven Install\n\n");
+sleep(3);
+system("apt-get install maven -y");
+sleep(3);
+printf("\tMaven Installed Successfully\n\n");
+    
     return 0;
 }

@@ -34,13 +34,6 @@ gcc node.c -o node
 sleep 3
 ./node
 
-echo "Maven Install"
-sleep 3
-apt-get install maven -y
-sleep 3
-echo "maven install successfully"
-sleep 3
-
 echo "nginx Install"
 sleep 3
 apt-get install nginx -y
